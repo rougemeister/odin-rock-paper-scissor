@@ -51,7 +51,7 @@ const game = () => {
     let computerScore = 0;
     
   
-    let outcome = 0;
+    let outcome = '';
 
     for (let i = 0; i < count; i++) {
         let playerSelection = prompt("Choose Rock, paper or Scissors to play");
