@@ -54,10 +54,12 @@ const game = () => {
     let outcome = '';
 
     for (let i = 0; i < count; i++) {
+        
         let playerSelection = prompt("Choose Rock, paper or Scissors to play");
         playerSelection = playerSelection.toLowerCase();
         let computerSelection = getComputerChoice();
         outcome = playRound(playerSelection, computerSelection);
+
         if (outcome === 'win') {
         playerScore +=1;
         }else if (outcome ==='lose') {
@@ -68,11 +70,8 @@ const game = () => {
             return false;
         }
     }
-    if (playerScore > computerScore){
-        console.log ('You win!');
-    } else {
-        console.log ('You lose!');
-    }
+
+    (playerScore > computerScore)? console.log ('You win!'): console.log ('You lose!');
    
 }
 
