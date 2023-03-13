@@ -5,7 +5,7 @@ const getComputerChoice = () => {
     }else if (randomChoice === 1) {
         return 'paper';
     }else {
-        return 'scissors'
+        return 'scissors';
     }
 }
 
@@ -61,7 +61,7 @@ const game = () => {
         outcome = playRound(playerSelection, computerSelection);
 
         if (outcome === 'win') {
-        playerScore +=1;
+         playerScore +=1;
         }else if (outcome ==='lose') {
          computerScore +=1;
         }else if (outcome === 'tie'){
@@ -71,7 +71,7 @@ const game = () => {
         }
     }
 
-    (playerScore > computerScore)? console.log ('You win!'): console.log ('You lose!');
+    playerScore > computerScore ? console.log ('You win!'): console.log ('You lose!');
    
 }
 
