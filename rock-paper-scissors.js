@@ -67,7 +67,7 @@ const game = () => {
         }else if (outcome === 'tie'){
         count +=1;
         } else {
-            return false;
+            return;
         }
     }
 
