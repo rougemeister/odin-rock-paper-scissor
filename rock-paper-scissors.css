@@ -46,7 +46,7 @@ button {
 }
 
 .score {
-    background-color: yellow;
+    background-color: rgb(255, 255, 202);
     color: black;
     text-align: center;
     width: 120px;
@@ -69,13 +69,24 @@ button {
 .separator {
     border-right: 1px dashed white;
     height: 170px;
-    padding-left: 22px;
+    
 }
 
-#results{
-    height: 40px;
-    width: 200px;
-    background-color: rebeccapurple;
-    margin: auto;
+.computer-score, .player-score {
+    height: 120px;
+    width: 110px;
+    background-color: rgb(255, 255, 178);
+    color: black;
+    border-radius: 10px;
     margin-top: 10px;
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+    
+}
+
+.player, .computer {
+    text-align: center;
+
+    
 }
